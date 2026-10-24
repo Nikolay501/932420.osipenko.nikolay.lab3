@@ -22,18 +22,19 @@
         </nav>
     </header>
 
-    <div id="about" style="text-align: center; margin-bottom: 20px;">
-        <div class="photo-wrapper">
-            <img src="images/Nikolay_Osipenko.jpg" 
-                 alt="Портрет Николая Осипенко" 
-                 width="200" 
-                 height="200"
-                 class="img">
-            <span class="badge">Астроном</span>
-        </div>
-    </div>
-
     <main>
+        <section id="about">
+            <h2>О себе</h2>
+            <div class="photo-wrapper">
+                <img src="images/Nikolay_Osipenko.jpg" 
+                     alt="Портрет Николая Осипенко" 
+                     width="200" 
+                     height="200"
+                     class="img">
+                <span class="badge">Астроном</span>
+            </div>
+        </section>
+
         <section id="skills">
             <h2>Мои космические навыки</h2>
             <ul>
@@ -104,7 +105,7 @@
         </section>
 
         <aside>
-            <h3>Любимое созвездие: Орион</h3>
+            <h2>Любимое созвездие: Орион</h2>
             <p>Орион - самое красивое созвездие зимнего неба. Больше всего меня восхищает яркая звезда Бетельгейзе и знаменитая Большая туманность Ориона.</p>
         </aside>
 
@@ -112,13 +113,16 @@
             <h2>Форма обратной связи</h2>
             <form action="#" method="post">
                 <div>
-                    <input type="text" name="userName" placeholder="Ваше имя" required>
+                    <label for="userName">Ваше имя:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Ваше имя" required>
                 </div>
                 <div>
-                    <input type="email" name="userEmail" placeholder="Ваш Email" required>
+                    <label for="userEmail">Ваш Email:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Ваш Email" required>
                 </div>
                 <div>
-                    <textarea name="userMessage" rows="4" placeholder="Ваше сообщение или вопрос о космосе..." required></textarea>
+                    <label for="userMessage">Ваше сообщение или вопрос:</label>
+                    <textarea id="userMessage" name="userMessage" rows="4" placeholder="Ваше сообщение или вопрос о космосе..." required></textarea>
                 </div>
                 <div>
                     <button type="submit">Отправить</button>
