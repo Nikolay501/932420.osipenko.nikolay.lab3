@@ -1,233 +1,139 @@
-:root {
-    --bg-color: #0b132b;
-    --text-color: #e0e6ed;
-    --accent-color: #ffd166;
-    --secondary-bg: #1c2541;
-    --link-color: #4cc9f0;
-    --link-visited-color: #c77dff;
-    --main-font: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе - Николай Осипенко</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+    <header>
+        <h1>Николай Осипенко</h1>
+        <p>Персональная страница: Космический энтузиаст и астроном-любитель</p>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#about">О себе</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#objects">Объекты</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
 
-body {
-    font-family: var(--main-font);
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 20px 15px;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
+    <main>
+        <section id="about">
+            <h2>О себе</h2>
+            <div class="photo-wrapper">
+                <img src="images/Nikolay_Osipenko.jpg" 
+                     alt="Портрет Николая Осипенко" 
+                     width="200" 
+                     height="200"
+                     class="img">
+                <span class="badge">Астроном</span>
+            </div>
+        </section>
 
-main {
-    position: static;
-}
+        <section id="skills">
+            <h2>Мои космические навыки</h2>
+            <ul>
+                <li>Работа с любительским зеркальным телескопом системы Ньютона</li>
+                <li>Ориентирование по созвездиям и картам звёздного неба</li>
+                <li>Астрофотография и постобработка снимков глубокого космоса</li>
+                <li>3D-моделирование орбит и рельефа планет</li>
+            </ul>
+        </section>
 
-h1, h2, h3, h4 {
-    color: var(--accent-color);
-}
+        <section id="objects">
+            <h2>Наблюдаемые объекты</h2>
+            <div class="cards-container">
+                <article class="card">
+                    <h3>Юпитер</h3>
+                    <p>Наблюдение полос в атмосфере и четырёх крупнейших галилеевых спутников.</p>
+                </article>
+                <article class="card">
+                    <h3>Сатурн</h3>
+                    <p>Изучение структуры колец, щели Кассини и яркого спутника Титан.</p>
+                </article>
+                <article class="card">
+                    <h3>Луна</h3>
+                    <p>Съёмка лунных морей, кратеров и горных хребтов вдоль линии терминатора.</p>
+                </article>
+            </div>
+        </section>
 
-header {
-    text-align: center;
-    border-bottom: 1px solid var(--accent-color);
-    padding-bottom: 15px;
-    margin-bottom: 20px;
-}
+        <section id="gallery">
+            <h2>Астрономический дашборд</h2>
+            <div class="grid-container">
+                <article class="grid-item">
+                    <h4>M42</h4>
+                    <p>Туманность Ориона</p>
+                </article>
+                <article class="grid-item">
+                    <h4>M31</h4>
+                    <p>Галактика Андромеды</p>
+                </article>
+                <article class="grid-item">
+                    <h4>M45</h4>
+                    <p>Скопление Плеяды</p>
+                </article>
+                <article class="grid-item">
+                    <h4>Марс</h4>
+                    <p>Полярные шапки</p>
+                </article>
+                <article class="grid-item">
+                    <h4>Солнце</h4>
+                    <p>Группы солнечных пятен</p>
+                </article>
+                <article class="grid-item">
+                    <h4>МКС</h4>
+                    <p>Транзит по диску Луны</p>
+                </article>
+            </div>
+        </section>
 
-.nav-menu ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    list-style: none;
-    padding: 0;
-    margin: 15px 0 0 0;
-}
+        <section>
+            <h2>Вдохновляющие космические миссии</h2>
+            <p>Узнать больше о космосе можно на <a href="https://ru.wikipedia.org/wiki/Космос" target="_blank">Википедии</a>.</p>
+            <ol>
+                <li><strong>«Джеймс Уэбб»</strong> - исследование самых ранних галактик Вселенной.</li>
+                <li><strong>«Вояджер-1»</strong> - первый рукотворный аппарат, вышедший в межзвёздное пространство.</li>
+                <li><strong>Марсоход «Персеверанс»</strong> - поиск следов древней жизни на Красной планете.</li>
+                <li><strong>«Артемида»</strong> - программа по возвращению человека на Луну.</li>
+            </ol>
+        </section>
 
-.nav-menu a {
-    font-weight: bold;
-    text-decoration: none;
-}
+        <aside>
+            <h2>Любимое созвездие: Орион</h2>
+            <p>Орион - самое красивое созвездие зимнего неба. Больше всего меня восхищает яркая звезда Бетельгейзе и знаменитая Большая туманность Ориона.</p>
+        </aside>
 
-.photo-wrapper {
-    position: relative;
-    display: inline-block;
-}
+        <section id="contact" class="form-section">
+            <h2>Форма обратной связи</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="userName">Ваше имя:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Ваше имя" required>
+                </div>
+                <div>
+                    <label for="userEmail">Ваш Email:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Ваш Email" required>
+                </div>
+                <div>
+                    <label for="userMessage">Ваше сообщение или вопрос:</label>
+                    <textarea id="userMessage" name="userMessage" rows="4" placeholder="Ваше сообщение или вопрос о космосе..." required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Отправить</button>
+                </div>
+            </form>
+        </section>
+    </main>
 
-.badge {
-    position: absolute;
-    bottom: 10px;
-    right: -15px;
-    background-color: var(--accent-color);
-    color: var(--bg-color);
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-weight: bold;
-}
+    <footer>
+        <p>&copy; 2026 Николай Осипенко. Все права защищены.</p>
+    </footer>
 
-.img {
-    border-radius: 25px;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-a {
-    color: var(--link-color);
-}
-
-a:visited {
-    color: var(--link-visited-color);
-}
-
-a:hover {
-    text-decoration: none;
-    color: var(--accent-color);
-}
-
-a:active {
-    color: #f77f00;
-}
-
-.cards-container {
-    display: flex;
-    gap: 15px;
-    justify-content: space-between;
-}
-
-.card {
-    flex: 1;
-    background-color: var(--secondary-bg);
-    border: 1px solid var(--accent-color);
-    border-radius: 8px;
-    padding: 15px;
-}
-
-.card h3 {
-    margin-top: 0;
-}
-
-.card p {
-    margin-bottom: 0;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 15px;
-}
-
-.grid-item {
-    background-color: var(--secondary-bg);
-    border: 1px solid var(--accent-color);
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-}
-
-.grid-item h4 {
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.grid-item p {
-    margin: 0;
-}
-
-aside {
-    background-color: var(--secondary-bg);
-    border-left: 4px solid var(--accent-color);
-    padding: 10px 15px;
-    margin: 20px 0;
-}
-
-.form-section {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-form div {
-    margin-bottom: 10px;
-}
-
-input, textarea, button {
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid var(--accent-color);
-    background-color: var(--secondary-bg);
-    color: var(--text-color);
-    width: 100%;
-}
-
-input:focus, textarea:focus {
-    outline: 2px solid var(--accent-color);
-}
-
-button {
-    background-color: var(--accent-color);
-    color: var(--bg-color);
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #ffc233;
-}
-
-button:focus {
-    outline: 2px solid #ffffff;
-    outline-offset: 2px;
-}
-
-button:active {
-    transform: scale(0.95);
-}
-
-footer {
-    text-align: center;
-    border-top: 1px solid var(--accent-color);
-    margin-top: 30px;
-    padding-top: 10px;
-}
-
-@media (max-width: 768px) {
-    .cards-container {
-        flex-wrap: wrap;
-    }
-
-    .card {
-        flex: 1 1 calc(50% - 15px);
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-    }
-}
-
-@media (max-width: 480px) {
-    .nav-menu ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .cards-container {
-        flex-direction: column;
-    }
-
-    .card {
-        flex: 1 1 100%;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-}
+</body>
+</html>
